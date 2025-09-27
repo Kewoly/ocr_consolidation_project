@@ -64,7 +64,7 @@ uvicorn main:app --reload
 
 ### 4. Lancer le front (selon votre stack)
 
-Pour ce projet , j'ai juste exposé le port 8000 dans mon back pour afficher un simple front en html.
+Pour ce projet , j'ai exposé le port 8000 dans mon back pour afficher un simple front en html.
 
 ##  Exemple d’utilisation
 
@@ -75,3 +75,16 @@ Pour ce projet , j'ai juste exposé le port 8000 dans mon back pour afficher un 
 5. Visualiser le texte consolidé dans l’interface.  
 
 ![Aperçu de l’application](Visualisation/image1.png) ![Aperçu de l’application](Visualisation/image2.png) ![Aperçu de l’application](Visualisation/image3.png)
+
+
+##  Ameliorations futures
+
+1. Gestion avancée des conflits d’opérations.  
+2. Export en PDF consolidé avec historique des modifications.  
+3. Intégration d’un moteur de recherche sur les arrêtés.
+4. Tests unitaires  
+5. Déploiement Docker pour un usage simple.
+     
+## Auteur et crédit
+
+Ce mini projet est réalisé à titre personnel par Kewoly LIWOKE  dans le cadre de la mission de consolidation automatisée des arrêtés administratifs par Direction générale de la prévention des risques/SDRS/MND/Data Studio Risques.
