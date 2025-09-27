@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Consolidation — Revue</title>
+  <style>
+    body{font-family:Inter,Segoe UI,Arial;margin:0;padding:0;display:flex;height:100vh}
+    aside{width:420px;border-right:1px solid #ddd;padding:12px;box-sizing:border-box;overflow:auto}
+    main{flex:1;padding:8px;display:flex;flex-direction:column}
+    .op{padding:8px;border:1px solid #eee;margin-bottom:8px;cursor:pointer;border-radius:6px}
+    .op:hover{background:#f7f7f7}
+    iframe{flex:1;border:1px solid #ccc;border-radius:6px}
+    header{font-weight:600;margin-bottom:8px}
+    .controls{margin-bottom:8px}
+  </style>
+</head>
+<body>
+  <aside>
+    <header>Opérations détectées</header>
+    <div class="controls">
+      <button id="reload">Recharger ops</button>
+    </div>
+    <div id="ops"></div>
+  </aside>
+  <main>
+    <div id="meta" style="margin-bottom:8px">Sélectionne une opération pour afficher le consolidé.</div>
+    <iframe id="viewer" src="" title="Consolidated view"></iframe>
+  </main>
+
+  <script>
+    async function loadOps(){
+      const opsDiv = document.getElementById('ops');
+      opsDiv.innerHTML = 'Chargement…';
+      try{
+        const res = await fetch('/ops');
+        if(!res.ok) throw new Error('ops non trouvées: '+res.status);
+        const ops = await res.json();
+        if(!Array.isArray(ops)){ opsDiv.innerHTML = '<i>Format ops inattendu</i>'; return; }
+        opsDiv.innerHTML = '';
+        ops.forEach(op => {
+          const el = document.createElement('div');
+          el.className = 'op';
+          el.innerHTML = `<div><strong>${op.op_type}</strong> — id: ${op.id || op.op_id || op.op}</div>
+                          <div style="font-size:0.9em;color:#444;margin-top:6px">${(op.detected_span||'').slice(0,180).replace(/\n/g,' ')}${(op.detected_span||'').length>180?'…':''}</div>
+                          <div style="font-size:0.8em;color:#666;margin-top:6px">applied: ${op.applied} — note: ${op.note||''}</div>`;
+          el.addEventListener('click', () => onSelectOp(op));
+          opsDiv.appendChild(el);
+        });
+        if(ops.length===0) opsDiv.innerHTML = '<i>Aucune opération</i>';
+      }catch(e){
+        opsDiv.innerHTML = '<i>Erreur: '+e.message+'</i>';
+      }
+    }
+
+    function onSelectOp(op){
+      // essaye d'ouvrir le consolidé correspondant (node id)
+      const node = (op.source_node || op.source || '').replace(/\W+/g,'_') || op.target_fragment || '';
+      document.getElementById('meta').textContent = `Op ${op.id||op.op_id||''} — node: ${node || 'inconnu'}`;
+      // try common locations
+      const candidates = [
+        `/consolidated/${node}_consolidated.html`,
+        `/consolidated/${node}.html`,
+        `/consolidated/${(op.source_node||'')}_consolidated.html`,
+        `/consolidated/${(op.source_node||'')}.html`,
+        `/consolidated/${op.source_node}_consolidated.html`
+      ];
+      // set first candidate that responds 200
+      (async ()=>{
+        const viewer = document.getElementById('viewer');
+        for(const c of candidates){
+          try{
+            const r = await fetch(c, {method:'HEAD'});
+            if(r.ok){ viewer.src = c; return; }
+          }catch(e){}
+        }
+        // fallback: show raw HTML of original work file if available
+        viewer.src = '/';
+      })();
+    }
+
+    document.getElementById('reload').addEventListener('click', loadOps);
+    loadOps();
+  </script>
+</body>
+</html>

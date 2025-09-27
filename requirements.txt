@@ -1,0 +1,16 @@
+arretify @ git+https://github.com/mte-dgpr/arretify.git
+beautifulsoup4
+networkx
+python-dateutil
+rapidfuzz
+pdf2image
+pytesseract
+pillow
+python-dotenv
+requests
+spacy
+mistralai 
+datauri
+rapidfuzz==2.16.1
+fastapi==0.95.2
+uvicorn==0.22.0
