@@ -1,0 +1,98 @@
+[
+  {
+    "op_type": "MODIF",
+    "source_node": "arrete2",
+    "detected_span": "DIRECTION DE LA CITOYENNETE ET DE L'ENVIRONNEMENT Sous-\ndirection de l'environnement\nBureau des milieux naturels et paysages\nARRETE N  ° 2009-7438  portant modification de l'arrêté du\n28 mars 2003\nrenouvelant l'autorisation de rejet dans la Vauxonne des effluents de la station d'épuration de Saint-Etienne-des-Oullières, exploitée par le syndicat intercommunal de la Vauxonne.",
+    "target_ref": null,
+    "effective_date": "28 mars 2003",
+    "confidence": 0.7,
+    "detected_in_fragment_id": "arrete2_frag_0",
+    "applied": false,
+    "note": "unknown_op",
+    "target_fragment": "arrete2_frag_0"
+  },
+  {
+    "op_type": "MODIF",
+    "source_node": "arrete2",
+    "detected_span": "VU la demande de modification en date du 1er octobre 2009, reçue le 5 octobre 2009, présentée par le syndicat intercommunal de la Vauxonne ;",
+    "target_ref": null,
+    "effective_date": "1er octobre 2009",
+    "confidence": 0.7,
+    "detected_in_fragment_id": "arrete2_frag_0",
+    "applied": false,
+    "note": "unknown_op",
+    "target_fragment": "arrete2_frag_0"
+  },
+  {
+    "op_type": "MODIF",
+    "source_node": "arrete2",
+    "detected_span": "ARRETE  L'arrêté préfectoral n²003-1483 du\n28 mars 2003\nest modifié comme suit :",
+    "target_ref": null,
+    "effective_date": "28 mars 2003",
+    "confidence": 0.7,
+    "detected_in_fragment_id": "arrete2_frag_0",
+    "applied": false,
+    "note": "unknown_op",
+    "target_fragment": "arrete2_frag_0"
+  },
+  {
+    "op_type": "MODIF",
+    "source_node": "arrete2",
+    "detected_span": "1)\nouvrages de traitement\nest modifié comme suit :",
+    "target_ref": null,
+    "effective_date": null,
+    "confidence": 0.7,
+    "detected_in_fragment_id": "arrete2_frag_0",
+    "applied": false,
+    "note": "unknown_op",
+    "target_fragment": "arrete2_frag_0"
+  },
+  {
+    "op_type": "MODIF",
+    "source_node": "arrete2",
+    "detected_span": "1)\nQualité du rejet d'eau traitée\nest modifié comme suit :",
+    "target_ref": null,
+    "effective_date": null,
+    "confidence": 0.7,
+    "detected_in_fragment_id": "arrete2_frag_0",
+    "applied": false,
+    "note": "unknown_op",
+    "target_fragment": "arrete2_frag_0"
+  },
+  {
+    "op_type": "ABROG",
+    "source_node": "arrete2",
+    "detected_span": "Cet article est abrogé.",
+    "target_ref": null,
+    "effective_date": null,
+    "confidence": 0.7,
+    "detected_in_fragment_id": "arrete2_frag_0",
+    "applied": false,
+    "note": "unknown_op",
+    "target_fragment": "arrete2_frag_0"
+  },
+  {
+    "op_type": "MODIF",
+    "source_node": "arrete2",
+    "detected_span": "Article 3 -\nL'article 7\nAutosurveillance\nest modifié comme suit :",
+    "target_ref": "3",
+    "effective_date": null,
+    "confidence": 0.7,
+    "detected_in_fragment_id": "arrete2_frag_0",
+    "applied": false,
+    "note": "unknown_op",
+    "target_fragment": "arrete2_frag_0"
+  },
+  {
+    "op_type": "MODIF",
+    "source_node": "arrete2",
+    "detected_span": "Article 4 -\nL'article 10\ndurée de l'autorisation\nest modifié comme suit :",
+    "target_ref": "4",
+    "effective_date": null,
+    "confidence": 0.7,
+    "detected_in_fragment_id": "arrete2_frag_0",
+    "applied": false,
+    "note": "unknown_op",
+    "target_fragment": "arrete2_frag_0"
+  }
+]

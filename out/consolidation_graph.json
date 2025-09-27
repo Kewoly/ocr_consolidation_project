@@ -1,0 +1,37 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "arrete",
+      "id": "arrete2"
+    },
+    {
+      "type": "arrete",
+      "id": "3"
+    },
+    {
+      "type": "arrete",
+      "id": "4"
+    }
+  ],
+  "links": [
+    {
+      "op_type": "MODIF",
+      "effective_date": null,
+      "span": "Article 3 -\nL'article 7\nAutosurveillance\nest modifié comme suit :",
+      "confidence": 0.7,
+      "source": "arrete2",
+      "target": "3"
+    },
+    {
+      "op_type": "MODIF",
+      "effective_date": null,
+      "span": "Article 4 -\nL'article 10\ndurée de l'autorisation\nest modifié comme suit :",
+      "confidence": 0.7,
+      "source": "arrete2",
+      "target": "4"
+    }
+  ]
+}

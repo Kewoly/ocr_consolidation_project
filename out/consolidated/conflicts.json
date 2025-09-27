@@ -1,0 +1,46 @@
+{
+  "graph_cycles": [],
+  "concurrent_ops": [
+    {
+      "target": "arrete2_frag_0",
+      "date": "28 mars 2003",
+      "ops": [
+        {
+          "id": "arrete2_0",
+          "op_type": "MODIF",
+          "confidence": 0.7
+        },
+        {
+          "id": "arrete2_1",
+          "op_type": "MODIF",
+          "confidence": 0.7
+        },
+        {
+          "id": "arrete2_2",
+          "op_type": "MODIF",
+          "confidence": 0.7
+        },
+        {
+          "id": "arrete2_3",
+          "op_type": "MODIF",
+          "confidence": 0.7
+        },
+        {
+          "id": "arrete2_4",
+          "op_type": "ABROG",
+          "confidence": 0.7
+        },
+        {
+          "id": "arrete2_5",
+          "op_type": "MODIF",
+          "confidence": 0.7
+        },
+        {
+          "id": "arrete2_6",
+          "op_type": "MODIF",
+          "confidence": 0.7
+        }
+      ]
+    }
+  ]
+}
