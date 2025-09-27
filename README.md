@@ -68,7 +68,7 @@ Pour ce projet , j'ai exposé le port 8000 dans mon back pour afficher un simple
 
 ##  Exemple d’utilisation
 
-1. Charger un arrêté source (`arrete2.html`).  
+1. Charger des arrétés sources (`arrete2.html`).  
 2. Les opérations détectées s’affichent dans le panneau gauche.  
 3. Appliquer les modifications désirées.  
 4. Générer la version consolidée (`arrete2_consolidated.html`).  
@@ -87,4 +87,4 @@ Pour ce projet , j'ai exposé le port 8000 dans mon back pour afficher un simple
      
 ## Auteur et crédit
 
-Ce mini projet est réalisé à titre personnel par Kewoly LIWOKE  dans le cadre de la mission de consolidation automatisée des arrêtés administratifs par Direction générale de la prévention des risques/SDRS/MND/Data Studio Risques.
+Ce mini projet est réalisé à titre personnel par Kewoly LIWOKE  dans le cadre de la mission de consolidation automatisée des arrêtés administratifs par la Direction générale de la prévention des risques/SDRS/MND/Data Studio Risques.
