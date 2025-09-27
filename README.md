@@ -74,4 +74,4 @@ Pour ce projet , j'ai juste exposé le port 8000 dans mon back pour afficher un 
 4. Générer la version consolidée (`arrete2_consolidated.html`).  
 5. Visualiser le texte consolidé dans l’interface.  
 
-![Aperçu de l’application](Visualisation/Captured'écran2025-09-27221112.png) [](docs/images/exemple_utilisation.png) [](docs/images/exemple_utilisation.png)
+![Aperçu de l’application](Visualisation/Capture d'écran 2025-09-27 221112.png) [](Visualisation/Capture d'écran 2025-09-27 222959.png) [](Visualisation/Capture d'écran 2025-09-27 223120.png)
